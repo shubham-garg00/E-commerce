@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="feedbackcss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <title>Feedback</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- <img src="logo.png" alt="LOGO" > -->
+    <div id="content">
+    <div class="heading"><p>FEEDBACK FORM</p></div>
+
+    
+    <form>
+    <fieldset class="info">  
+        <table>
+            <tr>
+                <th>Name: </th>
+                <td><input type="text" id="Name" name="Name" required class="box"></td>
+            </tr>
+            <tr>
+                <th>Email ID: </th>
+                <td><input type="email" id="Email" name="Email" class="box"></td>
+            </tr>
+        </table>
+    </fieldset> 
+    
+
+    <fieldset class="rate">
+        <div class="rating">Rate our website: 
+            <input type="radio" name="star" id="star1" class="star"><label for="star1">&nbsp 5</label>
+            <input type="radio" name="star" id="star2" class="star"><label for="star2">&nbsp 4</label>
+            <input type="radio" name="star" id="star3" class="star"><label for="star3">&nbsp 3</label>
+            <input type="radio" name="star" id="star4" class="star"><label for="star4">&nbsp 2</label>
+            <input type="radio" name="star" id="star5" class="star"><label for="star5">&nbsp 1</label>
+        </div>
+
+        <textarea placeholder="Enter your Feedback..." name="message" rows="10" cols="50"></textarea>
+    </fieldset>
+
+    <!-- <input type="submit" value="Submit"> -->
+    <button type="submit" class="submit" onclick="func()">Submit</button>
+    </form>
+
+    </div>
+
+    <script>
+        function func() {
+       alert("Enter valid email address");
+      }
+    </script>
+
+
+</body>
+</html>
